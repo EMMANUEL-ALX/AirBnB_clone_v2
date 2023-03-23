@@ -10,7 +10,7 @@ class Review(BaseModel, Base):
     Attributes:
         place_id: place id
         user_id: user id
-        text: review description
+        text: review description.
     """
     __tablename__ = "reviews"
     text = Column(String(1024), nullable=False)
