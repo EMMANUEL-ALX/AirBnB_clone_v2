@@ -32,7 +32,7 @@ class Place(BaseModel, Base):
         price_by_night:: pice for a staying in int
         latitude: latitude in flaot
         longitude: longitude in float
-        amenity_ids: list of Amenity ids
+        amenity_ids: list of Amenity ids.
     """
     __tablename__ = "places"
     city_id = Column(String(60), ForeignKey("cities.id"), nullable=False)
